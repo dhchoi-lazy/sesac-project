@@ -8,21 +8,30 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: peachpuff;
+            
         }
 
         #chat-container {
             width: 80%;
             margin: auto;
-            max-width: 600px;
+            max-width: 700px;
             height: 100vh;
+            
+            
         }
 
         #chat-box {
+            background-color: cadetblue;
             height: 80%;
             border: 1px solid #ddd;
             margin-bottom: 10px;
             padding: 10px;
             overflow-y: scroll;
+        }
+        #me {
+            background-color: yellow;
+            text-align: right;
         }
 
         #user-input {
@@ -32,12 +41,19 @@
         #send-button {
             width: 100px;
         }
+        #chat-prompt{
+            background-color: blueviolet;
+        }
     </style>
 </head>
 
 <body>
     <div id="chat-container">
-        <div id="chat-box"></div>
+        <h2>도봉이 챗봇</h2>
+        <div id="chat-box">
+            <div id="dobong">아아아</div>
+            <div id="me">안녕?</div>
+        </div>
         <div id="chat-prompt">
             <input type="text" id="user-input" placeholder="메세지를 입력하세요.">
             <button id="send-button">보내기</button>
